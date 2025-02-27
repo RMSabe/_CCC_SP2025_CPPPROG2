@@ -206,6 +206,8 @@ bool AlObj::proc_loop(void)
 			bytebuffer_index_rel++;
 		}
 
+		if(((size_t) this->str.length()) < this->n_digits) break;
+
 		_u64 = 1u;
 		for(str_index = 0u; str_index < ((size_t) this->str.length()); str_index++)
 		{
