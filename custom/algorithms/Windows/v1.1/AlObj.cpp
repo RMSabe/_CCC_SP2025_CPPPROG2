@@ -202,6 +202,8 @@ BOOL WINAPI AlObj::proc_loop(VOID)
 			bytebuffer_index_rel++;
 		}
 
+		if(((SIZE_T) this->str.length()) < this->n_digits) break;
+
 		_u64 = 1u;
 		for(str_index = 0u; str_index < ((SIZE_T) this->str.length()); str_index++)
 		{
